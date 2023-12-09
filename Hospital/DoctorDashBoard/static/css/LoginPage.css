@@ -1,0 +1,36 @@
+body{
+    align-items: center;
+    background-color: rgb(215, 215, 228);
+}
+.Form-group{
+    background-color: blue;
+    margin: 20px;
+}
+
+.Form-group input{
+    width: 80%;
+}
+.Regi{
+    text-align: center;
+    font-size: 23px;
+    margin: 20px;
+    color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.input{
+    text-align: center;
+    margin-top: 3px;
+}
+.inputText{
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.Submit{
+    margin:10px 180px 10px;
+    width: 160px;
+    padding: 7px;
+}

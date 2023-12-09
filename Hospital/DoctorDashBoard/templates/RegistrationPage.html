@@ -1,0 +1,84 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/RegistrationPage.css' %}">
+    <title>Doctor Registration Page</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+                <form action="/Doctor/RegistrationPage/" method="post" name="Form" class="Form-group">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col Regi">Doctor Registration Page</div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-3">First Name :</div>
+                        <div class="col-6"> <input type="text" name="FirstName" id="FirstNameID" placeholder="First Name" onkeyup="return FirstNameError()" required></div>
+                        <div class="col-3" id="FirstName-error"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">Last Name</div>
+                        <div class="col-6"> <input type="text" name="LastName" id="LastNameID" placeholder="Last name" required></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">Photo</div>
+                        <div class="col-6"> <input type="file" name="Photo" id="PhotoID" required></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">Email ID</div>
+                        <div class="col-6"> <input type="email" name="Email" id="EmailID" placeholder="Email ID"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">Password</div>
+                        <div class="col-6"> <input type="password" name="Password" id="PasswordID" placeholder="Password" onkeyup="return PasswordError()"></div>
+                        <div class="col-3" id="PasswordID-error"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">Confirm Password</div>
+                        <div class="col-6"> <input type="password" name="CPassword" id="CPasswordID" placeholder="Confirm Password" onkeyup="return CpasswordError()"></div>
+                        <div class="col-3" id="CPassw-error"></div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12 Address"><hr>Address</div>
+                        
+                        <div class="col-3"> Line</div>
+                        <div class="col-6"><input type="text" name="Line1" id="Line1ID" placeholder="Local Address"></div>
+                    </div>
+                    <div class="row">    
+                        <div class="col-3">City</div>
+                        <div class="col-6"> <input type="city" name="City" id="CityID" placeholder="City"></div>
+                    </div>
+                    <div class="row">    
+                        <div class="col-3">Country</div>
+                        <div class="col-6"> <input type="country" name="Country" id="CountryID" placeholder="Country"></div>
+                    </div>
+                    <div class="row">    
+                        <div class="col-3">Pincode</div>
+                        <div class="col-6"> <input type="pincode" name="Pincode" id="PincodeID" placeholder="Pincode"></div>
+                        
+                    </div>
+                    <div>
+                        <button type="submit" class="Submit" onclick="return Cpassword()">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-3">
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/Registration.js' %}"></script>
+  </body>
+</html>

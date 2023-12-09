@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/LoginPage.css' %}">
+    
+    <script src="{% static 'js/Login.js' %}"></script>
+    <title>Doctor Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form action="/Doctor/LoginPage/" method="post" name="Form" class="Form-group">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col Regi">Doctor Login Form</div>
+                    </div>
+                    
+                    <span class="bg-success" style="color: rgb(247, 79, 12);">{{message}}</span>
+                    <div class="row">
+                        <div class="col-3 inputText">Email ID</div>
+                        <div class="col-6 input"> <input type="email" name="Email" id="EmailID" placeholder="Email ID" onkeyup="return EmailError()"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 inputText">Password</div>
+                        <div class="col-6 input"> <input type="password" name="Password" id="PasswordID" placeholder="Password" onkeyup="return EmailError()"></div>
+                    </div>
+                    <div>
+                        <button type="submit" class="Submit" onkeyup="return EmailError()">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
