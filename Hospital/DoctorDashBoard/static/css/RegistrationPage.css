@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(202, 243, 127);
+    display: grid;
+    place-items: center;
+    
+}
+
+.Form-group{
+    background-color: rgb(3, 123, 35);
+    color: white;
+    padding: 10px;
+    margin: 4px;
+    font-size: 18px;
+}
+.Regi{
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 20px 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Form-group input{
+    width: 100%;
+    margin: 3px;
+    padding: 5px;
+    border-color: rgb(252, 213, 154);
+    font-size: 17px;
+}
+.Address{
+    font-size: 20px;
+    color: rgb(246, 251, 108);
+    margin: 20px 0px 10px;
+    
+}
+.Submit{
+    margin: 20px 100px 5px;
+    font-size: 18px;
+    width: 60%;
+    padding: 5px;
+    background-color: blue;
+    color: #faf8f8;
+}
+.Submit:hover{
+    background-color: blueviolet;
+}
+form span{
+    background-color: yellow;
+}

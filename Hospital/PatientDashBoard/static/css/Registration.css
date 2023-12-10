@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(69, 52, 15);
+
+}
+.Form-group{
+    background-color: rgb(210, 189, 229);
+    margin: 30px;
+}
+
+.Form-group input{
+    margin-left: 10px;
+    width: 60%;
+}
+.Form-group label{
+    margin-left: 20px;
+}
+.submit{
+    margin-left: 100px;
+    width: 300px;
+    padding: 8px;
+}
